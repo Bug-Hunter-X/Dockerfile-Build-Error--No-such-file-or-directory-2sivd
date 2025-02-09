@@ -1,0 +1,1 @@
+This repository demonstrates a common error in Dockerfiles:  failure to properly copy necessary files into the image. The initial Dockerfile attempts to install dependencies using `package.json`, but fails because this file isn't included in the image's context. The solution shows how to properly copy the `package.json` file before installing dependencies.
